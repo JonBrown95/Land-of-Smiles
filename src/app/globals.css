@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 
-
+.bg-thailand-red {
+  background-color: #ed1c24; 
+}
 
