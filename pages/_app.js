@@ -1,3 +1,4 @@
+import "../src/app/globals.css";
 import {
   ClerkProvider,
   RedirectToSignIn,
@@ -5,6 +6,9 @@ import {
   SignedIn,
   SignedOut,
 } from "@clerk/clerk-react";
+import Header from "../components/Header";
+
+
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +16,7 @@ function MyApp({ Component, pageProps }) {
       publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
     >
       <SignedIn>
+        <Header/>
         <Component {...pageProps} />
       </SignedIn>
       <SignedOut>
