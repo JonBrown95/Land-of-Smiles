@@ -7,6 +7,7 @@ import {
   SignedOut,
 } from "@clerk/clerk-react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 
 
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
       <SignedIn>
         <Header/>
         <Component {...pageProps} />
+        <Footer/>
       </SignedIn>
       <SignedOut>
         <RedirectToSignIn />
