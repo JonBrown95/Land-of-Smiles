@@ -1,22 +1,48 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
+
+  const navigateToHome = () => {
+    router.push("/");
+  };
+
+  const navigateToMuayThai = () => {
+    router.push("/muaythai");
+  };
+
   return (
-    <header className="flex justify-between items-center bg-thailand-red text-white p-3">
-      <h1 className="text-xl font-semibold">
-        <Link href="/">Land of Smiles</Link>
-      </h1>
-      <nav>
-        <ul className="flex space-x-4">
-          <li>
-            <Link href="/weather">Weather</Link>
-          </li>
-          <li>
-            <Link href="/planner">Itinerary Planner</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div className="bg-thailand-blue py-2">
+      <div className="w-4/5 mx-auto bg-thailand-red rounded-full shadow-md overflow-hidden">
+        <div className="flex items-center justify-between px-10 py-3">
+          <div className="flex items-center gap-4">
+            <div
+              className="font-bold text-sm text-thailand-blue uppercase"
+              onClick={navigateToHome}
+              style={{ cursor: "pointer" }}
+            >
+              Land of Smiles
+            </div>
+          </div>
+          <div className="flex items-center space-x-4">
+            <nav className="space-x-4">
+              <a
+                href="#"
+                className="text-xs uppercase text-thailand-blue hover:text-white transition duration-300"
+              >
+                Planner
+              </a>
+              <button
+                onClick={navigateToMuayThai}
+                className="text-xs uppercase text-thailand-blue hover:text-white transition duration-300"
+              >
+                Muay Thai
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
