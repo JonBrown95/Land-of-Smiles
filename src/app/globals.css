@@ -10,3 +10,35 @@
 .bg-thailand-blue {
   background-color: #0051BA;
 }
+
+@layer utilities {
+  .bg-gradient-to-b {
+    background: linear-gradient(to bottom, var(--bg-gradient-to-b-from), var(--bg-gradient-to-b-to));
+  }
+
+  .from-thailand-blue {
+    --bg-gradient-to-b-from: #0051BA;
+  }
+
+  .to-thailand-dark-blue {
+    --bg-gradient-to-b-to: #0056B3;
+  }
+
+  .from-thailand-red {
+    --bg-gradient-to-b-from: #ED1C24;
+  }
+
+  .to-thailand-red {
+    --bg-gradient-to-b-to: #D4141E;
+  }
+}
+
+body {
+  font-family: 'Krub', sans-serif;
+  
+}
+
+
+h1, h2, h3 {
+  font-family: 'Krub', sans-serif;
+}
