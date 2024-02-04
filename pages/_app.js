@@ -8,6 +8,7 @@ import {
 } from "@clerk/clerk-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Chatbot from "../components/Chatbot";
 
 
 
@@ -17,7 +18,8 @@ function MyApp({ Component, pageProps }) {
       publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
     >
       <SignedIn>
-        <Header/>
+        <Header />
+        <Chatbot/>
         <Component {...pageProps} />
         <Footer/>
       </SignedIn>
