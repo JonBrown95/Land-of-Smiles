@@ -1,3 +1,4 @@
+import { UserButton, UserProfile } from "@clerk/clerk-react";
 import { useRouter } from "next/router";
 
 const Header = () => {
@@ -9,6 +10,10 @@ const Header = () => {
 
   const navigateToMuayThai = () => {
     router.push("/muaythai");
+  };
+
+  const navigateToWeather = () => {
+    router.push("/weather");
   };
 
   return (
@@ -32,12 +37,22 @@ const Header = () => {
               >
                 Planner
               </a>
+
               <button
                 onClick={navigateToMuayThai}
                 className="text-xs uppercase text-thailand-blue hover:text-white transition duration-300"
               >
                 Muay Thai
               </button>
+              <button
+                onClick={navigateToWeather}
+                className="text-xs uppercase text-thailand-blue hover:text-white transition duration-300"
+              >
+                Weather
+              </button>
+              
+               
+              
             </nav>
           </div>
         </div>
