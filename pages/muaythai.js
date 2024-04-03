@@ -73,7 +73,7 @@ function MuayThai() {
           </div>
         </div>
 
-        <p className="text-lg md:text-xl text-gray-700 mt-8 leading-relaxed">
+        <p className="text-lg md:text-xl text-gray-700 py-8 leading-relaxed">
           Experience the unique blend of tradition and modernity as you delve
           into the world of Muay Thai in Thailand. Whether you're a seasoned
           fighter or a fitness enthusiast, Muay Thai offers a journey of
@@ -86,7 +86,7 @@ function MuayThai() {
               <img
                 className="h-48 w-full object-cover md:h-full md:w-48"
                 src="boxing.jpg"
-                alt="Modern building architecture"
+                alt="Two men Thai boxing"
               />
             </div>
             <div className="p-8">
@@ -95,14 +95,14 @@ function MuayThai() {
               </div>
               <a
                 href="https://muaythaiadvisor.com/"
+                target="_blank"
                 className="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
               >
                 Check out Muay Thai Advisor
               </a>
               <p className="mt-2 text-slate-500">
-                Looking to take your team away on a retreat to enjoy awesome
-                food and take in some sunshine? We have a list of places to do
-                just that.
+                Amazing website that provides an overview of each gym across the
+                different regions of Thailand!
               </p>
             </div>
           </div>
