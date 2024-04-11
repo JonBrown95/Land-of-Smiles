@@ -2,15 +2,18 @@
 import { ClerkProvider, useClerk } from "@clerk/clerk-react";
 import { SignIn, SignUp } from "@clerk/clerk-react";
 import { useEffect } from "react";
-import Header from "../components/Header";
+
 
 function Hero() {
   return (
-    <div
+    <header
       className="relative h-screen  flex items-center justify-center text-center bg-cover bg-center"
       style={{
         backgroundImage: `url(/bg.jpg)`,
       }}
+      role="banner"
+      aria-label="Thai beach with traditional Thai boats"
+      aria-describedby="banner-description"
     >
       <div className="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-55"></div>
 
@@ -24,7 +27,7 @@ function Hero() {
           </p>
         </div>
       </main>
-    </div>
+    </header>
   );
 }
 
